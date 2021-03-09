@@ -1,12 +1,14 @@
 def main():
     last = 100
-    for num in range(last):
-        if num % 3 == 0:
-            print("Fizz")
-        elif num % 5 == 0:
-            print("Buzz")
-        elif num % 3 == 0 and num % 5 == 0:
+    for i in range(last):
+        if i % 5 == 0 and i % 3 == 0:
             print("FizzBuzz")
-        else:
-            print(num)
+            continue
+        elif i % 5 == 0:
+            print("Buzz")
+            continue
+        elif i % 3 == 0:
+            print("Fizz")
+            continue
+        print(i)
 main()
