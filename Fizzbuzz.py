@@ -1,6 +1,6 @@
 def main():
-    last = 100
-    for i in range(last):
+    l = 100
+    for i in range(l):
         if i % 5 == 0 and i % 3 == 0:
             print("FizzBuzz")
             continue
